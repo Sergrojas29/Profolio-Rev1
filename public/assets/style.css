@@ -76,40 +76,118 @@ main {
         height: 800px;
         width: 80%;
     }
-    
-    #titleblock {
-        display: flex;
-        flex-direction: column;
-        width: 20%;
-        background-color: #C3979E;
-        #logoBlock{
-            display: flex;
-            flex-direction: row;
-            height: 20%;
-            border-bottom: solid 4pt var(--titleLines);
-            >img{
-                margin-left: 5px;
-                width: 40%;
-                
-            }
-            >h1{
-                font-size: 3vw;
-                align-self: self-end;
-                color: var(--PrimeColor);
-            }
 
-        }
+}
+
+
+
+/*!!! titleblock */
+#titleblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20%;
+    background-color: #C3979E;
+}
+
+#logoBlock {
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    border-bottom: solid 4pt var(--titleLines);
+    border: solid 1pt purple;
+
+    >img {
+        margin-left: 5px;
+        width: 40%;
 
     }
 
+    >h1 {
+        font-size: 40pt;
+        align-self: self-end;
+        color: var(--PrimeColor);
+    }
 
+}
+
+
+
+#boxContainer {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rowBox {
+    width: 100%;
+    height: 20%;
+    border: solid .5pt white;
+    display: flex;
+    justify-content: space-evenly;
+    .colTitle {
+        border-left: solid .5pt white;
+        text-align: center;
+        font-size: 10pt;
+    }
+    .REV,
+    .DATE{
+        width: 20%;
+    }
+    .DESQ{
+        width: 60%;
+        
+    }
+
+}
+
+.dividers {
+    width: 33%;
+    border-left: solid .5pt white;
+    display: flex;
+    flex-direction: row;
+}
+
+.titleArea {
+    display: flex;
+    justify-content: space-evenly;
+
+    .colTitle {
+        border-left: solid .5pt white;
+        text-align: center;
+        font-size: 10pt;
+    }
+    .REV,
+    .DATE{
+        width: 20%;
+    }
+    .DESQ{
+        width: 60%;
+        
+    }
+
+}
+
+.drawing-info {
+    padding: 30px 0;
+}
+
+.drawingNumber {
+    padding: 15px 0;
+    font-size: 24pt;
 }
 
 
 
 
 
-
+.tb {
+    color: white;
+    text-align: center;
+    border: solid .5pt white;
+}
 
 
 
